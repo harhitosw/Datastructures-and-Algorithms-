@@ -109,10 +109,13 @@ import java.util.Scanner;
             z.child[j] = y.child[j + T];
           }
         }
+      // setting the Keys in Node Y equal to T-1 
         y.n = T - 1;
+      // adjusting the position of the child from the given pos 
         for (int j = x.n; j >= pos + 1; j--) {
           x.child[j + 1] = x.child[j];
         }
+        // make z the child at pos+1  on node x
         x.child[pos + 1] = z;
         for (int j = x.n - 1; j >= pos; j--) {
           x.key[j + 1] = x.key[j];
@@ -270,7 +273,7 @@ public static void main(String[] args) {
               }
               break;
             case 4: 
-              System.out.println("Program ended successfully.\n Hence we conclude that B-Tree is efficient on DBMS as compared to BST or AVL trees ");
+              System.out.println("Program ended successfully.\n Hence we conclude that B-Tree is efficient on DBMS as compared to BST and AVL trees ");
               System.exit(0);
             default:
               System.out.println("Sorry Please Enter the Right Choice!!!");
