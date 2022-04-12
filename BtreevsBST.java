@@ -68,7 +68,7 @@ import java.util.Scanner;
 
  class BTree
 {
-    private int T;
+    private int T=3;
     public class Node {
         // int n is the current number of keys in the B tree
           int n;
@@ -88,8 +88,7 @@ import java.util.Scanner;
           }
         }
         Node root=new Node();
-        public BTree(int t) {
-            T = t;
+        public BTree() {
             root = new Node();
             root.n = 0;
             root.leaf = true;
@@ -215,7 +214,7 @@ import java.util.Scanner;
 };
 public class BtreevsBST{
 public static void main(String[] args) {
-    BTree bt = new BTree(3);
+    BTree bt = new BTree();
     BST b=new BST();
     int N,option;
     Scanner sc=new Scanner(System.in);
