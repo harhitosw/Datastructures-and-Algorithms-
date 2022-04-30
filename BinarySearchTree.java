@@ -134,6 +134,7 @@ public class BinarySearchTree {
                 else{
                 System.out.println("Sorry The Node is Not Present");
                 }
+                break;
                 case 4:
                 System.out.println("Enter the Number you want to delete");
                 N=sc.nextInt();
