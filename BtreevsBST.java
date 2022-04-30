@@ -68,6 +68,7 @@ import java.util.Scanner;
 
  class BTree
 {
+  // the order of the given tree is 3 
     private int T=3;
     public class Node {
         // int n is the current number of keys in the B tree
@@ -221,9 +222,9 @@ public static void main(String[] args) {
     BST b=new BST();
     int N,option;
     Scanner sc=new Scanner(System.in);
-    System.out.println("---------------B-tree vs BST---------------");
     while(true) 
     {
+        System.out.println("---------------B-tree vs BST---------------");
         System.out.println("\n1.Insert Node in BST \t2.Perform Inorder Traversal \n3.Search Node \t\t4.Exit");
         System.out.println("Enter the choice of operation to be performed:");
         option=sc.nextInt();
