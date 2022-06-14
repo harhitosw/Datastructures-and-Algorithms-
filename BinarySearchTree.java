@@ -139,6 +139,7 @@ public class BinarySearchTree {
                 System.out.println("Enter the Number you want to delete");
                 N=sc.nextInt();
                 bst.deleteinvoker(N);
+                break;
                 default:
                 System.out.println("Sorry Please Enter the Right Choice!!!");
                 break;
